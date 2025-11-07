@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil - SESI</title>
+    <script src="jquery.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="prismjs.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="style.bundle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <!--begin::Main-->
+    <!--begin::Header Mobile-->
+<div id="kt_header_mobile" class="header-mobile header-mobile-fixed fixed-top">
+
+    <!--begin::Logo-->
+    <a href="index.html">
+        <img alt="Logo" src="/media/logos/sesi.png" class="h-30px" />
+    </a>
+
+    <!--end::Logo-->
+    <!--begin::Toolbar-->
+    <div class="d-flex align-items-center">
+        <button class="btn p-0 rounded-0 ml-4" id="kt_header_mobile_toggle">
+            <span class="svg-icon svg-icon-danger svg-icon-xl">
+
+                <!--begin::Svg Icon | path:assets/media/svg/icons/Text/Toggle-Left.svg-->
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path d="M2 11.5C2 12.3284 2.67157 13 3.5 13H20.5C21.3284 13 22 12.3284 22 11.5V11.5C22 10.6716 21.3284 10 20.5 10H3.5C2.67157 10 2 10.6716 2 11.5V11.5Z" fill="black" />
+                        <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M9.5 20C8.67157 20 8 19.3284 8 18.5C8 17.6716 8.67157 17 9.5 17H20.5C21.3284 17 22 17.6716 22 18.5C22 19.3284 21.3284 20 20.5 20H9.5ZM15.5 6C14.6716 6 14 5.32843 14 4.5C14 3.67157 14.6716 3 15.5 3H20.5C21.3284 3 22 3.67157 22 4.5C22 5.32843 21.3284 6 20.5 6H15.5Z" fill="black" />
+                    </g>
+                </svg>
+
+                <!--end::Svg Icon-->
+            </span>
+        </button>
+        <button class="btn rounded-0 p-0 ml-2" id="kt_header_mobile_sign_out" onclick="window.location.href = '/Login/Logout'">
+            <span class="svg-icon svg-icon-danger svg-icon-xxl">
+
+                <!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path d="M14.0069431,7.00607258 C13.4546584,7.00607258 13.0069431,6.55855153 13.0069431,6.00650634 C13.0069431,5.45446114 13.4546584,5.00694009 14.0069431,5.00694009 L15.0069431,5.00694009 C17.2160821,5.00694009 19.0069431,6.7970243 19.0069431,9.00520507 L19.0069431,15.001735 C19.0069431,17.2099158 17.2160821,19 15.0069431,19 L3.00694311,19 C0.797804106,19 -0.993056895,17.2099158 -0.993056895,15.001735 L-0.993056895,8.99826498 C-0.993056895,6.7900842 0.797804106,5 3.00694311,5 L4.00694793,5 C4.55923268,5 5.00694793,5.44752105 5.00694793,5.99956624 C5.00694793,6.55161144 4.55923268,6.99913249 4.00694793,6.99913249 L3.00694311,6.99913249 C1.90237361,6.99913249 1.00694311,7.89417459 1.00694311,8.99826498 L1.00694311,15.001735 C1.00694311,16.1058254 1.90237361,17.0008675 3.00694311,17.0008675 L15.0069431,17.0008675 C16.1115126,17.0008675 17.0069431,16.1058254 17.0069431,15.001735 L17.0069431,9.00520507 C17.0069431,7.90111468 16.1115126,7.00607258 15.0069431,7.00607258 L14.0069431,7.00607258 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" transform="translate(9.006943, 12.000000) scale(-1, 1) rotate(-90.000000) translate(-9.006943, -12.000000) " />
+                        <rect fill="#000000" opacity="0.3" transform="translate(14.000000, 12.000000) rotate(-270.000000) translate(-14.000000, -12.000000) " x="13" y="6" width="2" height="12" rx="1" />
+                        <path d="M21.7928932,9.79289322 C22.1834175,9.40236893 22.8165825,9.40236893 23.2071068,9.79289322 C23.5976311,10.1834175 23.5976311,10.8165825 23.2071068,11.2071068 L20.2071068,14.2071068 C19.8165825,14.5976311 19.1834175,14.5976311 18.7928932,14.2071068 L15.7928932,11.2071068 C15.4023689,10.8165825 15.4023689,10.1834175 15.7928932,9.79289322 C16.1834175,9.40236893 16.8165825,9.40236893 17.2071068,9.79289322 L19.5,12.0857864 L21.7928932,9.79289322 Z" fill="#000000" fill-rule="nonzero" transform="translate(19.500000, 12.000000) rotate(-90.000000) translate(-19.500000, -12.000000) " />
+                    </g>
+                </svg>
+
+                <!--end::Svg Icon-->
+            </span>
+        </button>
+    </div>
+
+    <!--end::Toolbar-->
+</div>
+
+<!--end::Header Mobile-->
+    <div class="d-flex flex-column flex-root">
+
+        <!--begin::Page-->
+        <div class="d-flex flex-row flex-column-fluid page">
+
+            <!--begin::Wrapper-->
+            <div class="d-flex flex-column flex-row-fluid wrapper container" id="kt_wrapper">
+
+                
+<!--begin::Header-->
+<div id="kt_header" class="header header-fixed">
+
+    <!--begin::Container-->
+    <div class="container">
+
+        <!--begin::Header Menu Wrapper-->
+        <div class="header-menu-wrapper header-menu-wrapper-left" id="kt_header_menu_wrapper">
+
+            <!--begin::Logo-->
+            <div class="header-logo mr-10 d-none d-lg-flex">
+                <a href="/home">
+                    <img alt="Logo" src="sesi.png" />
+                </a>
+            </div>
+
+            <!--end::Logo-->
+            <!--begin::Header Menu-->
+            <div id="kt_header_menu" class="header-menu header-menu-left header-menu-mobile header-menu-layout-default">
+
+                <!--begin::Header Nav-->
+                <ul class="menu-nav">
+                    <li class="menu-item menu-item-active" aria-haspopup="true">
+                        <a href="/home" class="menu-link">
+                            <span class="menu-text text-dark">Inicio</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-nav">
+                    <li class="menu-item menu-item" aria-haspopup="true">
+                        <a href="/dependentes" class="menu-link">
+                            <span class="menu-text text-dark">Dependentes</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-nav">
+                    <li class="menu-item menu-item" aria-haspopup="true">
+                        <a href="https://meusesi.sesisp.org.br/minhas-reservas" target="_blank" class="menu-link">
+                            <span class="menu-text text-dark">Reservas</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-nav">
+                    <li class="menu-item menu-item" aria-haspopup="true">
+                        <a href="https://portalfinanceiro.sesisenaisp.org.br/" target="_blank" class="menu-link">
+                            <span class="menu-text text-dark">Financeiro</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!--end::Header Nav-->
+            </div>
+
+            <!--end::Header Menu-->
+        </div>
+
+        <!--end::Header Menu Wrapper-->
+        <!--begin::Topbar-->
+        <div class="topbar">
+
+
+            <!--begin::Quick Actions-->
+            <div class="dropdown mr-1 mr-lg-3">
+
+                <!--begin::Toggle-->
+                <!--<div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
+                    <div class="btn btn-icon btn-circle btn-hover-light-danger btn-dropdown">
+                        <span class="svg-icon svg-icon-lg">-->
+                <!--begin::Svg Icon | path:assets/media/svg/icons/Media/Equalizer.svg-->
+                <!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <rect x="0" y="0" width="24" height="24" />
+                        <rect fill="#000000" opacity="0.3" x="13" y="4" width="3" height="16" rx="1.5" />
+                        <rect fill="#000000" x="8" y="9" width="3" height="11" rx="1.5" />
+                        <rect fill="#000000" x="18" y="11" width="3" height="9" rx="1.5" />
+                        <rect fill="#000000" x="3" y="13" width="3" height="7" rx="1.5" />
+                    </g>
+                </svg>-->
+                <!--end::Svg Icon-->
+                <!--</span>
+                    </div>
+                </div>-->
+                <!--end::Toggle-->
+                <!--begin::Dropdown-->
+                <div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-anim-up dropdown-menu-lg">
+
+                    <!--[html-partial:include:{"file":"partials/_extras/dropdown/quick-actions.html"}]/-->
+                </div>
+
+                <!--end::Dropdown-->
+            </div>
+
+            <!--end::Quick Actions-->
+            <!--begin::Quick panel-->
+            <!--<div class="topbar-item mr-1 mr-lg-3">
+                <div class="btn btn-icon btn-circle btn-hover-light-danger" id="kt_quick_panel_toggle">
+                    <span class="svg-icon svg-icon-lg">-->
+            <!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
+            <!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect x="0" y="0" width="24" height="24" />
+                    <rect fill="#000000" x="4" y="4" width="7" height="7" rx="1.5" />
+                    <path d="M5.5,13 L9.5,13 C10.3284271,13 11,13.6715729 11,14.5 L11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L5.5,20 C4.67157288,20 4,19.3284271 4,18.5 L4,14.5 C4,13.6715729 4.67157288,13 5.5,13 Z M14.5,4 L18.5,4 C19.3284271,4 20,4.67157288 20,5.5 L20,9.5 C20,10.3284271 19.3284271,11 18.5,11 L14.5,11 C13.6715729,11 13,10.3284271 13,9.5 L13,5.5 C13,4.67157288 13.6715729,4 14.5,4 Z M14.5,13 L18.5,13 C19.3284271,13 20,13.6715729 20,14.5 L20,18.5 C20,19.3284271 19.3284271,20 18.5,20 L14.5,20 C13.6715729,20 13,19.3284271 13,18.5 L13,14.5 C13,13.6715729 13.6715729,13 14.5,13 Z" fill="#000000" opacity="0.3" />
+                </g>
+            </svg>-->
+            <!--end::Svg Icon-->
+            <!--</span>
+                </div>
+            </div>-->
+            <!--end::Quick panel-->
+            <!--begin::Chat-->
+            <!--<div class="topbar-item mr-1 mr-lg-5">
+                <div class="btn btn-icon btn-circle btn-hover-light-danger btn-clean" data-toggle="modal" data-target="#kt_chat_modal">
+                    <span class="svg-icon svg-icon-lg">-->
+            <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Chat6.svg-->
+            <!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect x="0" y="0" width="24" height="24" />
+                    <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M14.4862 18L12.7975 21.0566C12.5304 21.54 11.922 21.7153 11.4386 21.4483C11.2977 21.3704 11.1777 21.2597 11.0887 21.1255L9.01653 18H5C3.34315 18 2 16.6569 2 15V6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V15C22 16.6569 20.6569 18 19 18H14.4862Z" fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 7H15C15.5523 7 16 7.44772 16 8C16 8.55228 15.5523 9 15 9H6C5.44772 9 5 8.55228 5 8C5 7.44772 5.44772 7 6 7ZM6 11H11C11.5523 11 12 11.4477 12 12C12 12.5523 11.5523 13 11 13H6C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" fill="black" />
+                </g>
+            </svg>-->
+            <!--end::Svg Icon-->
+            <!--</span>
+                </div>
+            </div>-->
+            <!--end::Chat-->
+            <!--begin::User-->
+            <div class="topbar-item">
+                <div class="btn btn-icon btn-circle btn-light-danger" id="kt_quick_user_toggle" data-toggle="tooltip" data-theme="dark" title="Sair" onclick="window.location.href = 'MicrosoftIdentity/Account/SignOut'">
+                    <span class="svg-icon svg-icon-lg">
+
+                        <span class="svg-icon svg-icon-hover-light svg-icon-2x">
+                            <!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/keen/releases/2021-03-15-144509/theme/demo4/dist/../src/media/svg/icons/Navigation/Sign-out.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <rect x="0" y="0" width="24" height="24" />
+                                    <path d="M14.0069431,7.00607258 C13.4546584,7.00607258 13.0069431,6.55855153 13.0069431,6.00650634 C13.0069431,5.45446114 13.4546584,5.00694009 14.0069431,5.00694009 L15.0069431,5.00694009 C17.2160821,5.00694009 19.0069431,6.7970243 19.0069431,9.00520507 L19.0069431,15.001735 C19.0069431,17.2099158 17.2160821,19 15.0069431,19 L3.00694311,19 C0.797804106,19 -0.993056895,17.2099158 -0.993056895,15.001735 L-0.993056895,8.99826498 C-0.993056895,6.7900842 0.797804106,5 3.00694311,5 L4.00694793,5 C4.55923268,5 5.00694793,5.44752105 5.00694793,5.99956624 C5.00694793,6.55161144 4.55923268,6.99913249 4.00694793,6.99913249 L3.00694311,6.99913249 C1.90237361,6.99913249 1.00694311,7.89417459 1.00694311,8.99826498 L1.00694311,15.001735 C1.00694311,16.1058254 1.90237361,17.0008675 3.00694311,17.0008675 L15.0069431,17.0008675 C16.1115126,17.0008675 17.0069431,16.1058254 17.0069431,15.001735 L17.0069431,9.00520507 C17.0069431,7.90111468 16.1115126,7.00607258 15.0069431,7.00607258 L14.0069431,7.00607258 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" transform="translate(9.006943, 12.000000) scale(-1, 1) rotate(-90.000000) translate(-9.006943, -12.000000) " />
+                                    <rect fill="#000000" opacity="0.3" transform="translate(14.000000, 12.000000) rotate(-270.000000) translate(-14.000000, -12.000000) " x="13" y="6" width="2" height="12" rx="1" />
+                                    <path d="M21.7928932,9.79289322 C22.1834175,9.40236893 22.8165825,9.40236893 23.2071068,9.79289322 C23.5976311,10.1834175 23.5976311,10.8165825 23.2071068,11.2071068 L20.2071068,14.2071068 C19.8165825,14.5976311 19.1834175,14.5976311 18.7928932,14.2071068 L15.7928932,11.2071068 C15.4023689,10.8165825 15.4023689,10.1834175 15.7928932,9.79289322 C16.1834175,9.40236893 16.8165825,9.40236893 17.2071068,9.79289322 L19.5,12.0857864 L21.7928932,9.79289322 Z" fill="#000000" fill-rule="nonzero" transform="translate(19.500000, 12.000000) rotate(-90.000000) translate(-19.500000, -12.000000) " />
+                                </g>
+                            </svg><!--end::Svg Icon-->
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <!--end::User-->
+        </div>
+
+        <!--end::Topbar-->
+    </div>
+
+    <!--end::Container-->
+</div>
+
+<!--end::Header-->
+                <!--begin::Content-->
+                <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+
+                    <style>
+    .scale {
+        transition: transform 0.2s;
+        cursor: pointer;
+    }
+
+    /*.scale:hover{
+                    transform: scale(1.1)
+                }*/
+
+    .heightCardOfer {
+        height: 150px;
+    }
+
+    .imgProduect {
+        max-height: 150px;
+        max-width: 300px;
+    }
+
+    .QR {
+        max-width: 100%;
+    }
+
+    .displayNameM {
+        float: left;
+    }
+
+    .displayFlexM {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        z-index: 9999;
+        position: absolute;
+    }
+
+    .iconOptions {
+        color: #df4759;
+    }
+
+        .iconOptions:hover {
+            color: #ff0000;
+            transition: color 2s;
+        }
+
+    .dep {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navDepIco {
+        pointer-events: none;
+    }
+
+        .navDepIco label {
+            display: none;
+        }
+
+    @media only screen and (max-width: 800px) {
+        .photoPerf {
+            width: 100%;
+        }
+
+        .bodyCard {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .imgProduect {
+            max-height: 150px;
+            max-width: 200px;
+            transition: transform 0.2s;
+        }
+
+        .rowMobile {
+            flex-direction: column;
+        }
+
+        .displayFlexM {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .displayNameM {
+            float: unset;
+        }
+
+        .mobileName {
+            margin-left: 225px;
+        }
+
+        .dep {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .navDepItem {
+            display: none;
+            margin-top: 4px;
+        }
+
+        .navDepA {
+            width: 60vw;
+        }
+
+        .navDepIco {
+            pointer-events: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+            .navDepIco label {
+                display: block;
+            }
+    }
+
+    .modal-fullscreen {
+        max-width: 100%;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        display: flex;
+    }
+</style>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-custom gutter-b shadow-sm">
+                <div class="card-body">
+                    <!--begin::Top-->
+                    <div class="displayFlexM">
+                        <!--begin::Pic-->
+                        <div class="image-input image-input-outline image-input-circle" id="kt_image_3" name="divFoto">
+                            <div class="image-input-wrapper" id="imageFoto" style="background-image: url(https://perfil.sesisp.org.br/media/users/icon.png?cache=17);background-position: center;"></div>
+
+                            <label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Alterar Foto">
+                                <i class="fa fa-pen icon-sm text-muted"></i>
+                                <input type="file" name="profile_avatar" id="foto" accept=".png, .jpg, .jpeg" />
+                                <input type="hidden" name="profile_avatar_remove" />
+                            </label>
+
+                            <span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="cancel" data-toggle="tooltip" title="Cancel avatar">
+                                <i class="ki ki-bold-close icon-xs text-muted"></i>
+                            </span>
+                        </div>
+                        <!--end::Pic-->
+                        <!--begin: Info-->
+                        <div class="flex-grow-1">
+                            <!--begin::Title-->
+                            <div class="flex-wrap mt-2">
+                                <!--begin::User-->
+                                <div class="mr-3 text-center">
+                                    <!--begin::Name-->
+                                    <a href="#" class="text-dark text-hover-danger font-size-h5 font-weight-bold displayNameM">Bruna</a>
+                                    <!--end::Name-->
+                                </div>
+                                <!--begin::User-->
+                                <!--begin::Actions-->
+                                <div class="col-md-12 my-1 d-flex justify-content-end">
+                                    <a href="#" class="btn btn-sm btn-light-danger font-weight-bolder mr-2" data-toggle="modal" data-target="#minhasInformacoesModal">Minhas Informações</a>
+                                    <a href="MicrosoftIdentity/Account/EditProfile" class="btn btn-sm btn-light-danger font-weight-bolder mr-2">Editar Pefil</a>
+                                    <a href="#" class="btn btn-sm btn-danger font-weight-bolder" data-toggle="modal" data-target="#QRModal">QR Code</a>
+                                </div>
+                                <!--end::Actions-->
+                            </div>
+                            <!--end::Title-->
+                            <!--begin::Content-->
+                            <div class="d-flex align-items-center flex-wrap justify-content-between">
+                            </div>
+                            <!--end::Content-->
+                        </div>
+                        <!--end::Info-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+                <div class="col-md-12">
+                    <div class="row text-light-dark-75 h2 ml-8 mb-8">
+                        <b>Lazer e Atividade F&#xED;sica</b>
+                        <span class="label label-lg font-weight-bolder label-rounded label-danger ml-2">2</span>
+                    </div>
+                    <div class="row">
+                                <div class="col-lg-4 mb-8">
+                                    <div class="card card-custom card-stretch shadow-sm scale">
+                                        <div class="card-header">
+                                            <div class="card-title ">
+                                                <h3 class="card-label font-size-h6-md">Plano Plus - Familiar - Plano Plus Familiar</h3>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center heightCardOfer d-flex justify-content-between align-items-center">
+                                            <div class="col-md-12"><img src="sesi.png" class="imgProduect" /></div>
+                                        </div>
+                                        <div class="d-flex justify-content-between w-100 p-2 rounded bottom-0 pl-4 pr-4 pb-2 text-dark">
+                                                <div class="font-size-sm text-center">
+                                                    <div class="text-success">
+                                                        Data de Inscrição
+                                                    </div>
+                                                    <div>16/01/2025</div>
+                                                </div>
+                                                <div class="font-size-sm text-center">
+                                                    <div class="text-danger">
+                                                        Data de Vencimento
+                                                    </div>
+                                                    <div>27/05/2026</div>
+                                                </div>
+                                        </div>
+                                        <div class="text-center d-flex justify-content-between align-items-center">
+                                            <div class="oferOption text-danger d-flex flex-column justify-content-center align-items-center col-md-3"></div>
+                                            <div class="oferOption text-danger d-flex flex-column justify-content-center align-items-center col-md-3"><button type="button" class="btn" data-toggle="modal" data-target="#ofertaModal-8448"><i class="fas fa-info-circle fa-2x text-danger"></i><div class="font-weight-bold text-danger">Detalhes</div></button></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Modal Oferta-->
+                                <div class="modal fade" id="ofertaModal-8448" role="dialog" aria-labelledby="ofertaModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel"><img src="/media/logos/sesi.png" width="80" class="imgProduect" />Plano Plus - Familiar - Plano Plus Familiar</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <i aria-hidden="true" class="ki ki-close"></i>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body col-md-12 d-flex ml-4 flex-column" id="content">
+                                                <div class="row">
+                                                    <div class="col-md-6 h4 mb-4">
+                                                        Informações da oferta
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="font-weight-bold">Nome</div>
+                                                        <div>Plano Plus Familiar</div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 h4 mb-4 mt-6">
+                                                        Informações da Inscrição
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="font-weight-bold">Data Da Inscrição</div>
+                                                        <div>16/01/2025</div>
+                                                    </div>
+                                                        <div class="col-md-6">
+                                                            <div class="font-weight-bold">Data de Vencimento</div>
+                                                            <div>27/05/2026</div>
+                                                        </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mb-8">
+                                    <div class="card card-custom card-stretch shadow-sm scale">
+                                        <div class="card-header">
+                                            <div class="card-title ">
+                                                <h3 class="card-label font-size-h6-md">Muscula&#xE7;&#xE3;o e Gin&#xE1;sticas Coletivas - Muscula&#xE7;&#xE3;o &#x2B; coletivas - Musc, Funcional, abdomen e Ginastica</h3>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center heightCardOfer d-flex justify-content-between align-items-center">
+                                            <div class="col-md-12"><img src="sesi.png" class="imgProduect" /></div>
+                                        </div>
+                                        <div class="d-flex justify-content-between w-100 p-2 rounded bottom-0 pl-4 pr-4 pb-2 text-dark">
+                                                <div class="font-size-sm text-center">
+                                                    <div class="text-success">
+                                                        Data de Inscrição
+                                                    </div>
+                                                    <div>16/01/2025</div>
+                                                </div>
+                                                <div class="font-size-sm text-center">
+                                                    <div class="text-danger">
+                                                        Data de Vencimento
+                                                    </div>
+                                                    <div>28/05/2026</div>
+                                                </div>
+                                        </div>
+                                        <div class="text-center d-flex justify-content-between align-items-center">
+                                            <div class="oferOption text-danger d-flex flex-column justify-content-center align-items-center col-md-3"></div>
+                                                <div class="oferOption text-danger d-flex flex-column justify-content-center align-items-center col-md-3">
+                                                        <button class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-sync-alt fa-2x text-danger"></i><div class="font-weight-bold text-danger">Renovar</div></button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <button class="dropdown-item" id="renovaCartao-9218" onclick="RenovacaoCartao(463101, 9218, 45865109863, 126, 263412)"><i class="far fa-credit-card text-danger mr-2"></i>Renovação Cartão</button>
+                                                            <button class="dropdown-item" onclick="RenovacaoBoleto(463101, 9218, 45865109863, 126, 263412)"><i class="fas fa-barcode text-danger mr-2"></i>Renovação Boleto</button>
+                                                        </div>
+                                                </div>
+                                            <div class="oferOption text-danger d-flex flex-column justify-content-center align-items-center col-md-3"><button type="button" class="btn" data-toggle="modal" data-target="#ofertaModal-9218"><i class="fas fa-info-circle fa-2x text-danger"></i><div class="font-weight-bold text-danger">Detalhes</div></button></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Modal Oferta-->
+                                <div class="modal fade" id="ofertaModal-9218" role="dialog" aria-labelledby="ofertaModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel"><img src="/media/logos/sesi.png" width="80" class="imgProduect" />Muscula&#xE7;&#xE3;o e Gin&#xE1;sticas Coletivas - Muscula&#xE7;&#xE3;o &#x2B; coletivas - Musc, Funcional, abdomen e Ginastica</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <i aria-hidden="true" class="ki ki-close"></i>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body col-md-12 d-flex ml-4 flex-column" id="content">
+                                                <div class="row">
+                                                    <div class="col-md-6 h4 mb-4">
+                                                        Informações da oferta
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="font-weight-bold">Nome</div>
+                                                        <div>Muscula&#xE7;&#xE3;o &#x2B; coletivas - Musc, Funcional, abdomen e Ginastica</div>
+                                                    </div>
+
+                                                </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-md-12">
+                                                            <div class="font-weight-bold">Observacao</div>
+                                                            <div>Al&#xE9;m das atividades escolhidas, voc&#xEA; tamb&#xE9;m ter&#xE1; acesso as piscinas, quadras, campos e &#xE1;reas livres de qualquer Centro de Atividades - CAT SESI do Estado de S&#xE3;o Paulo. Para mais informa&#xE7;&#xF5;es entre em contato com a unidade atrav&#xE9;s do whats 13 3365-2100</div>
+                                                        </div>
+                                                    </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 h4 mb-4 mt-6">
+                                                        Informações da Inscrição
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="font-weight-bold">Data Da Inscrição</div>
+                                                        <div>16/01/2025</div>
+                                                    </div>
+                                                        <div class="col-md-6">
+                                                            <div class="font-weight-bold">Data de Vencimento</div>
+                                                            <div>28/05/2026</div>
+                                                        </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                    <hr class="mt-8" />
+                </div>
+    </div>
+</div>
+
+<!-- Modal QR Code -->
+<div class="modal fade" id="QRModal" role="dialog" aria-labelledby="QRModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">QR Code</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="QR" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkQAAAJECAYAAAD34DtaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAC5BSURBVHhe7dZLjiPLgsTQu/9Nv55zILRAQ8nTnQfgpAaG&#x2B;Liy4r//JUmSPO4//kOSJMlr&#x2B;iBKkiTP64MoSZI8rw&#x2B;iJEnyvD6IkiTJ8/ogSpIkz&#x2B;uDKEmSPK8PoiRJ8rw&#x2B;iJIkyfP6IEqSJM/rgyhJkjyvD6IkSfK8PoiSJMnz&#x2B;iBKkiTP64MoSZI8rw&#x2B;iJEnyvD6IkiTJ8/ogSpIkz&#x2B;uDKEmSPK8PoiRJ8rw&#x2B;iJIkyfP6IEqSJM/rgyhJkjyvD6IkSfK8PoiSJMnz&#x2B;iBKkiTP64MoSZI8rw&#x2B;iJEnyvD6IkiTJ8/ogSpIkz&#x2B;uDKEmSPK8PoiRJ8rw&#x2B;iJIkyfP6IEqSJM/rgyhJkjyvD6IkSfK8PoiSJMnz&#x2B;iBKkiTP64MoSZI8rw&#x2B;iJEnyvD6IkiTJ8/ogSpIkz&#x2B;uDKEmSPK8PoiRJ8rw&#x2B;iJIkyfP6IEqSJM/rgyhJkjyvD6IkSfK8PoiSJMnz&#x2B;iBKkiTP64MoSZI8rw&#x2B;iJEnyvD6IkiTJ8/ogSpIkz&#x2B;uDKEmSPK8PoiRJ8rw&#x2B;iJIkyfP6IEqSJM/rgyhJkjyvD6IkSfK8PoiSJMnz&#x2B;iBKkiTP64MoSZI8rw&#x2B;iJEnyvD6IkiTJ8/ogSpIkz&#x2B;uDKEmSPK8PoiRJ8rw&#x2B;iJIkyfP6IEqSJM/rgyhJkjyvD6IkSfK8PoiSJMnz&#x2B;iBKkiTP64MoSZI8rw&#x2B;iJEnyvD6IkiTJ8/ogSpIkz&#x2B;uDKEmSPK8PIum///6r&#x2B;n&#x2B;3xv3bW&#x2B;O&#x2B;bY37VZ&#x2B;K0xOUeCCrPrXG/dtb475tjftVn4rTE5R4IKs&#x2B;tcb921vjvm2N&#x2B;1WfitMTlHggqz61xv3bW&#x2B;O&#x2B;bY37VZ&#x2B;K0xOUeCCrPrXG/dtb475tjftVn4rTE5R4IKs&#x2B;tcb921vjvm2N&#x2B;1WfitMTlHggqz61xv3bW&#x2B;O&#x2B;bY37VZ&#x2B;K0xOUeCCrPrXG/dtb475tjftVn4rTE5R4IKs&#x2B;tcb921vjvm2N&#x2B;1WfitMTlHggqz61xv3bW&#x2B;O&#x2B;bY37VZ&#x2B;K0xOUeCCrPrXG/dtb475tjftVn4rTE5R4IKs&#x2B;tcb921vjvm2N&#x2B;1WfitMTlHggqz61xv3bW&#x2B;O&#x2B;bY37VZ&#x2B;K0xOUeCCrPrXG/dtb475tjftVn4rTE5R4IKs&#x2B;tcb921vjvm2N&#x2B;1WfitMTlHggqz61xv3bW&#x2B;O&#x2B;bY37VZ&#x2B;K0xOUeCCrPrXG/dtb475tjftVn4rTE5R4IKs&#x2B;tcb921vjvm2N&#x2B;1WfitMTlHggqz61xv3bW&#x2B;O&#x2B;bY37VZ&#x2B;K0xOUeCCrPrXG/dtb475tjftVn4rTE5R4IG05C9&#x2B;PbY37tjXu217D&#x2B;7flLHw/tjg9QYkH0paz8P3Y1rhvW&#x2B;O&#x2B;7TW8f1vOwvdji9MTlHggbTkL349tjfu2Ne7bXsP7t&#x2B;UsfD&#x2B;2OD1BiQfSlrPw/djWuG9b477tNbx/W87C92OL0xOUeCBtOQvfj22N&#x2B;7Y17ttew/u35Sx8P7Y4PUGJB9KWs/D92Na4b1vjvu01vH9bzsL3Y4vTE5R4IG05C9&#x2B;PbY37tjXu217D&#x2B;7flLHw/tjg9QYkH0paz8P3Y1rhvW&#x2B;O&#x2B;7TW8f1vOwvdji9MTlHggbTkL349tjfu2Ne7bXsP7t&#x2B;UsfD&#x2B;2OD1BiQfSlrPw/djWuG9b477tNbx/W87C92OL0xOUeCBtOQvfj22N&#x2B;7Y17ttew/u35Sx8P7Y4PUGJB9KWs/D92Na4b1vjvu01vH9bzsL3Y4vTE5R4IG05C9&#x2B;PbY37tjXu217D&#x2B;7flLHw/tjg9QYkH0paz8P3Y1rhvW&#x2B;O&#x2B;7TW8f1vOwvdji9MTlHggbTkL349tjfu2Ne7bXsP7t&#x2B;UsfD&#x2B;2OD1BiQfSlrPw/djWuG9b477tNbx/W87C92OL0xOUeCBtOQvfj22N&#x2B;7Y17ttew/u35Sx8P7Y4PUGJB9KWs/D92Na4b1vjvu01vH9bzsL3Y4vTE5R4IG05C9&#x2B;PbY37tjXu217D&#x2B;7flLHw/tjg9QYkH0paz8P3Y1rhvW&#x2B;O&#x2B;7TW8f1vOwvdji9MTlHggbWvcv7017tvWuH97a9y3rXHftsb921vjvi1OT1DigbStcf/21rhvW&#x2B;P&#x2B;7a1x37bGfdsa929vjfu2OD1BiQfStsb921vjvm2N&#x2B;7e3xn3bGvdta9y/vTXu2&#x2B;L0BCUeSNsa929vjfu2Ne7f3hr3bWvct61x//bWuG&#x2B;L0xOUeCBta9y/vTXu29a4f3tr3Letcd&#x2B;2xv3bW&#x2B;O&#x2B;LU5PUOKBtK1x//bWuG9b4/7trXHftsZ92xr3b2&#x2B;N&#x2B;7Y4PUGJB9K2xv3bW&#x2B;O&#x2B;bY37t7fGfdsa921r3L&#x2B;9Ne7b4vQEJR5I2xr3b2&#x2B;N&#x2B;7Y17t/eGvdta9y3rXH/9ta4b4vTE5R4IG1r3L&#x2B;9Ne7b1rh/e2vct61x37bG/dtb474tTk9Q4oG0rXH/9ta4b1vj/u2tcd&#x2B;2xn3bGvdvb437tjg9QYkH0rbG/dtb475tjfu3t8Z92xr3bWvcv7017tvi9AQlHkjbGvdvb437tjXu394a921r3Letcf/21rhvi9MTlHggbWvcv7017tvWuH97a9y3rXHftsb921vjvi1OT1DigbStcf/21rhvW&#x2B;P&#x2B;7a1x37bGfdsa929vjfu2OD1BiQfStsb921vjvm2N&#x2B;7e3xn3bGvdta9y/vTXu2&#x2B;L0BCUeSNsa929vjfu2Ne7f3hr3bWvct61x//bWuG&#x2B;L0xOUeCBta9y/vTXu29a4f3tr3Letcd&#x2B;2xv3bW&#x2B;O&#x2B;LU5PUOKBtK1x//bWuG9b4/7trXHftsZ92xr3b2&#x2B;N&#x2B;7Y4PUGJB9K2xv3bW&#x2B;O&#x2B;bY37t7fGfdsa921r3L&#x2B;9Ne7b4vQEJR5I2xr3b2&#x2B;N&#x2B;7Y17t/eGvdta9y3rXH/9ta4b4vTE5R4IG1r3L&#x2B;9Ne7b1rhvew3v37bGfdsa929vjfu2OD1BiQfStsb921vjvm2N&#x2B;7bX8P5ta9y3rXH/9ta4b4vTE5R4IG1r3L&#x2B;9Ne7b1rhvew3v37bGfdsa929vjfu2OD1BiQfStsb921vjvm2N&#x2B;7bX8P5ta9y3rXH/9ta4b4vTE5R4IG1r3L&#x2B;9Ne7b1rhvew3v37bGfdsa929vjfu2OD1BiQfStsb921vjvm2N&#x2B;7bX8P5ta9y3rXH/9ta4b4vTE5R4IG1r3L&#x2B;9Ne7b1rhvew3v37bGfdsa929vjfu2OD1BiQfStsb921vjvm2N&#x2B;7bX8P5ta9y3rXH/9ta4b4vTE5R4IG1r3L&#x2B;9Ne7b1rhvew3v37bGfdsa929vjfu2OD1BiQfStsb921vjvm2N&#x2B;7bX8P5ta9y3rXH/9ta4b4vTE5R4IG1r3L&#x2B;9Ne7b1rhvew3v37bGfdsa929vjfu2OD1BiQfStsb921vjvm2N&#x2B;7bX8P5ta9y3rXH/9ta4b4vTE5R4IG1r3L&#x2B;9Ne7b1rhvew3v37bGfdsa929vjfu2OD1BiQfStsb921vjvm2N&#x2B;7bX8P5ta9y3rXH/9ta4b4vTE5R4IG1r3L&#x2B;9Ne7b1rhvew3v37bGfdsa929vjfu2OD1BiQfStsb921vjvm2N&#x2B;7bX8P5ta9y3rXH/9ta4b4vTE5R4IG1r3L&#x2B;9Ne7b1rhvew3v37bGfdsa929vjfu2OD1BiQfStsb921vjvm2N&#x2B;7bX8P5ta9y3rXH/9ta4b4vTE5R4IG1r3L&#x2B;9Ne7b1rhvew3v37bGfdsa929vjfu2OD1BiQfStsb921vjvm2N&#x2B;7bX8P5ta9y3rXH/9ta4b4vTE5R4IG1r3L&#x2B;9Ne7b1rhfv22N&#x2B;7Y17t/eGvdtcXqCEg&#x2B;kbY37t7fGfdsa9&#x2B;u3rXHftsb921vjvi1OT1DigbStcf/21rhvW&#x2B;N&#x2B;/bY17tvWuH97a9y3xekJSjyQtjXu394a921r3K/ftsZ92xr3b2&#x2B;N&#x2B;7Y4PUGJB9K2xv3bW&#x2B;O&#x2B;bY379dvWuG9b4/7trXHfFqcnKPFA2ta4f3tr3Letcb9&#x2B;2xr3bWvcv7017tvi9AQlHkjbGvdvb437tjXu129b475tjfu3t8Z9W5yeoMQDaVvj/u2tcd&#x2B;2xv36bWvct61x//bWuG&#x2B;L0xOUeCBta9y/vTXu29a4X79tjfu2Ne7f3hr3bXF6ghIPpG2N&#x2B;7e3xn3bGvfrt61x37bG/dtb474tTk9Q4oG0rXH/9ta4b1vjfv22Ne7b1rh/e2vct8XpCUo8kLY17t/eGvdta9yv37bGfdsa929vjfu2OD1BiQfStsb921vjvm2N&#x2B;/Xb1rhvW&#x2B;P&#x2B;7a1x3xanJyjxQNrWuH97a9y3rXG/ftsa921r3L&#x2B;9Ne7b4vQEJR5I2xr3b2&#x2B;N&#x2B;7Y17tdvW&#x2B;O&#x2B;bY37t7fGfVucnqDEA2lb4/7trXHftsb9&#x2B;m1r3Letcf/21rhvi9MTlHggbWvcv7017tvWuF&#x2B;/bY37tjXu394a921xeoISD6Rtjfu3t8Z92xr367etcd&#x2B;2xv3bW&#x2B;O&#x2B;LU5PUOKBtK1x//bWuG9b4379tjXu29a4f3tr3LfF6QlKPJC2Ne7f3hr3bWvcr9&#x2B;2xn3bGvdvb437tjg9QYkH0paz8P3YTsfrvb3T8XptOQvfjy1OT1DigbTlLHw/ttPxem/vdLxeW87C92OL0xOUeCBtOQvfj&#x2B;10vN7bOx2v15az8P3Y4vQEJR5IW87C92M7Ha/39k7H67XlLHw/tjg9QYkH0paz8P3YTsfrvb3T8XptOQvfjy1OT1DigbTlLHw/ttPxem/vdLxeW87C92OL0xOUeCBtOQvfj&#x2B;10vN7bOx2v15az8P3Y4vQEJR5IW87C92M7Ha/39k7H67XlLHw/tjg9QYkH0paz8P3YTsfrvb3T8XptOQvfjy1OT1DigbTlLHw/ttPxem/vdLxeW87C92OL0xOUeCBtOQvfj&#x2B;10vN7bOx2v15az8P3Y4vQEJR5IW87C92M7Ha/39k7H67XlLHw/tjg9QYkH0paz8P3YTsfrvb3T8XptOQvfjy1OT1DigbTlLHw/ttPxem/vdLxeW87C92OL0xOUeCBtOQvfj&#x2B;10vN7bOx2v15az8P3Y4vQEJR5IW87C92M7Ha/39k7H67XlLHw/tjg9QYkH0paz8P3YTsfrvb3T8XptOQvfjy1OT1DigbTlLHw/ttPxem/vdLxeW87C92OL0xOUeCBtOQvfj&#x2B;10vN7bOx2v15az8P3Y4vQEJR5IW87C92M7Ha/39k7H67XlLHw/tjg9QYkHsupTa9y3rXHftsZ92xr3qz4Vpyco8UBWfWqN&#x2B;7Y17tvWuG9b437Vp&#x2B;L0BCUeyKpPrXHftsZ92xr3bWvcr/pUnJ6gxANZ9ak17tvWuG9b475tjftVn4rTE5R4IKs&#x2B;tcZ92xr3bWvct61xv&#x2B;pTcXqCEg9k1afWuG9b475tjfu2Ne5XfSpOT1Digaz61Br3bWvct61x37bG/apPxekJSjyQVZ9a475tjfu2Ne7b1rhf9ak4PUGJB7LqU2vct61x37bGfdsa96s&#x2B;FacnKPFAVn1qjfu2Ne7b1rhvW&#x2B;N&#x2B;1afi9AQlHsiqT61x37bGfdsa921r3K/6VJyeoMQDWfWpNe7b1rhvW&#x2B;O&#x2B;bY37VZ&#x2B;K0xOUeCCrPrXGfdsa921r3Letcb/qU3F6ghIPZNWn1rhvW&#x2B;O&#x2B;bY37tjXuV30qTk9Q4oGs&#x2B;tQa921r3Letcd&#x2B;2xv2qT8XpCUo8kFWfWuO&#x2B;bY37tjXu29a4X/WpOD1BiQey6lNr3Letcd&#x2B;2xn3bGverPhWnJyjxQFZ9ao37tjXu29a4b1vjftWn4vQEJR7Iqk&#x2B;tcd&#x2B;2xn3bGvdta9yv&#x2B;lScnqDEA1n1qTXu29a4b1vjvm2N&#x2B;1WfitMTTP4w/kG0rXH/9pL8Xf2Ckz&#x2B;M/yHb1rh/e0n&#x2B;rn7ByR/G/5Bta9y/vSR/V7/g5A/jf8i2Ne7fXpK/q19w8ofxP2TbGvdvL8nf1S84&#x2B;cP4H7Jtjfu3l&#x2B;Tv6hec/GH8D9m2xv3bS/J39QtO/jD&#x2B;h2xb4/7tJfm7&#x2B;gUnfxj/Q7atcf/2kvxd/YKTP4z/IdvWuH97Sf6ufsHJH8b/kG1r3L&#x2B;9JH9Xv&#x2B;DkD&#x2B;N/yLY17t9ekr&#x2B;rX3Dyh/E/ZNsa928vyd/VLzj5w/gfsm2N&#x2B;7eX5O/qF5z8YfwP2bbG/dtL8nf1C07&#x2B;MP6HbFvj/u0l&#x2B;bv6BSd/GP9Dtq1x//aS/F39gpM/jP8h29a4f3tJ/q5&#x2B;wckfxv&#x2B;QbWvcv70kf1e/4OQP43/ItjXu316Sv6tf8GH4B/a01rhvW&#x2B;P&#x2B;aa1x37bG/dNa475tjfv12&#x2B;L0BA/DA35aa9y3rXH/tNa4b1vj/mmtcd&#x2B;2xv36bXF6gofhAT&#x2B;tNe7b1rh/Wmvct61x/7TWuG9b4379tjg9wcPwgJ/WGvdta9w/rTXu29a4f1pr3Letcb9&#x2B;W5ye4GF4wE9rjfu2Ne6f1hr3bWvcP6017tvWuF&#x2B;/LU5P8DA84Ke1xn3bGvdPa437tjXun9Ya921r3K/fFqcneBge8NNa475tjfuntcZ92xr3T2uN&#x2B;7Y17tdvi9MTPAwP&#x2B;Gmtcd&#x2B;2xv3TWuO&#x2B;bY37p7XGfdsa9&#x2B;u3xekJHoYH/LTWuG9b4/5prXHftsb901rjvm2N&#x2B;/Xb4vQED8MDflpr3Letcf&#x2B;01rhvW&#x2B;P&#x2B;aa1x37bG/fptcXqCh&#x2B;EBP6017tvWuH9aa9y3rXH/tNa4b1vjfv22OD3Bw/CAn9Ya921r3D&#x2B;tNe7b1rh/Wmvct61xv35bnJ7gYXjAT2uN&#x2B;7Y17p/WGvdta9w/rTXu29a4X78tTk/wMDzgp7XGfdsa909rjfu2Ne6f1hr3bWvcr98Wpyd4GB7w01rjvm2N&#x2B;6e1xn3bGvdPa437tjXu12&#x2B;L0xM8DA/4aa1x37bG/dNa475tjfuntcZ92xr367fF6Qkehgf8tNa4b1vj/mmtcd&#x2B;2xv3TWuO&#x2B;bY379dvi9AQPwwN&#x2B;Wmvct61x/7TWuG9b4/5prXHftsb9&#x2B;m1xeoKH4QE/rTXu29a4f1pr3Letcf&#x2B;01rhvW&#x2B;N&#x2B;/bY4PcHD8ICf1hr3bWvcP6017tvWuH9aa9y3rXG/flucnqDEA2lb4/5pvYb3b3sN7992Ol6v7XS83vquOD1BiQfStsb903oN79/2Gt6/7XS8XtvpeL31XXF6ghIPpG2N&#x2B;6f1Gt6/7TW8f9vpeL220/F667vi9AQlHkjbGvdP6zW8f9treP&#x2B;20/F6bafj9dZ3xekJSjyQtjXun9ZreP&#x2B;21/D&#x2B;bafj9dpOx&#x2B;ut74rTE5R4IG1r3D&#x2B;t1/D&#x2B;ba/h/dtOx&#x2B;u1nY7XW98Vpyco8UDa1rh/Wq/h/dtew/u3nY7Xazsdr7e&#x2B;K05PUOKBtK1x/7Rew/u3vYb3bzsdr9d2Ol5vfVecnqDEA2lb4/5pvYb3b3sN7992Ol6v7XS83vquOD1BiQfStsb903oN79/2Gt6/7XS8XtvpeL31XXF6ghIPpG2N&#x2B;6f1Gt6/7TW8f9vpeL220/F667vi9AQlHkjbGvdP6zW8f9treP&#x2B;20/F6bafj9dZ3xekJSjyQtjXun9ZreP&#x2B;21/D&#x2B;bafj9dpOx&#x2B;ut74rTE5R4IG1r3D&#x2B;t1/D&#x2B;ba/h/dtOx&#x2B;u1nY7XW98Vpyco8UDa1rh/Wq/h/dtew/u3nY7Xazsdr7e&#x2B;K05PUOKBtK1x/7Rew/u3vYb3bzsdr9d2Ol5vfVecnqDEA2lb4/5pvYb3b3sN7992Ol6v7XS83vquOD1BiQfStsb903oN79/2Gt6/7XS8XtvpeL31XXF6ghIPpG2N&#x2B;6f1Gt6/7TW8f9vpeL220/F667vi9AQlHkjbGvdP6zW8f9treP&#x2B;20/F6bafj9dZ3xekJSjyQtjXu29a4f3tr3Le9hvdvew3v35b8UidQ4g/atsZ92xr3b2&#x2B;N&#x2B;7bX8P5tr&#x2B;H925Jf6gRK/EHb1rhvW&#x2B;P&#x2B;7a1x3/Ya3r/tNbx/W/JLnUCJP2jbGvdta9y/vTXu217D&#x2B;7e9hvdvS36pEyjxB21b475tjfu3t8Z922t4/7bX8P5tyS91AiX&#x2B;oG1r3Letcf/21rhvew3v3/Ya3r8t&#x2B;aVOoMQftG2N&#x2B;7Y17t/eGvdtr&#x2B;H9217D&#x2B;7clv9QJlPiDtq1x37bG/dtb477tNbx/22t4/7bklzqBEn/QtjXu29a4f3tr3Le9hvdvew3v35b8UidQ4g/atsZ92xr3b2&#x2B;N&#x2B;7bX8P5tr&#x2B;H925Jf6gRK/EHb1rhvW&#x2B;P&#x2B;7a1x3/Ya3r/tNbx/W/JLnUCJP2jbGvdta9y/vTXu217D&#x2B;7e9hvdvS36pEyjxB21b475tjfu3t8Z922t4/7bX8P5tyS91AiX&#x2B;oG1r3Letcf/21rhvew3v3/Ya3r8t&#x2B;aVOoMQftG2N&#x2B;7Y17t/eGvdtr&#x2B;H9217D&#x2B;7clv9QJlPiDtq1x37bG/dtb477tNbx/22t4/7bklzqBEn/QtjXu29a4f3tr3Le9hvdvew3v35b8UidQ4g/atsZ92xr3b2&#x2B;N&#x2B;7bX8P5tr&#x2B;H925Jf6gRK/EHb1rhvW&#x2B;P&#x2B;7a1x3/Ya3r/tNbx/W/JLnUCJP2jbGvdta9y/vTXu217D&#x2B;7e9hvdvS36pE3g5/sG5vdPxem/vdLxe2xr3bafj9drWuG/LWXojl&#x2B;MP8PZOx&#x2B;u9vdPxem1r3LedjtdrW&#x2B;O&#x2B;LWfpjVyOP8DbOx2v9/ZOx&#x2B;u1rXHfdjper22N&#x2B;7acpTdyOf4Ab&#x2B;90vN7bOx2v17bGfdvpeL22Ne7bcpbeyOX4A7y90/F6b&#x2B;90vF7bGvdtp&#x2B;P12ta4b8tZeiOX4w/w9k7H67290/F6bWvct52O12tb474tZ&#x2B;mNXI4/wNs7Ha/39k7H67Wtcd92Ol6vbY37tpylN3I5/gBv73S83ts7Ha/XtsZ92&#x2B;l4vbY17ttylt7I5fgDvL3T8Xpv73S8Xtsa922n4/Xa1rhvy1l6I5fjD/D2Tsfrvb3T8Xpta9y3nY7Xa1vjvi1n6Y1cjj/A2zsdr/f2Tsfrta1x33Y6Xq9tjfu2nKU3cjn&#x2B;AG/vdLze2zsdr9e2xn3b6Xi9tjXu23KW3sjl&#x2B;AO8vdPxem/vdLxe2xr3bafj9drWuG/LWXojl&#x2B;MP8PZOx&#x2B;u9vdPxem1r3LedjtdrW&#x2B;O&#x2B;LWfpjVyOP8DbOx2v9/ZOx&#x2B;u1rXHfdjper22N&#x2B;7acpTdyOf4Ab&#x2B;90vN7bOx2v17bGfdvpeL22Ne7bcpbeyOX4A7y90/F6b&#x2B;90vF7bGvdtp&#x2B;P12ta4b8tZeiOX4w/w9k7H67290/F6bWvct52O12tb474tZ&#x2B;mNXI4/wNs7Ha/39k7H67Wtcd92Ol6vbY37tpylN3I5/gBv73S83ts7Ha/XtsZ92&#x2B;l4vbY17ttylt7IYfiDqfqXrXH/tE7H67Wtcd92Ol6vLWfpjRyGP5iqf9ka90/rdLxe2xr3bafj9dpylt7IYfiDqfqXrXH/tE7H67Wtcd92Ol6vLWfpjRyGP5iqf9ka90/rdLxe2xr3bafj9dpylt7IYfiDqfqXrXH/tE7H67Wtcd92Ol6vLWfpjRyGP5iqf9ka90/rdLxe2xr3bafj9dpylt7IYfiDqfqXrXH/tE7H67Wtcd92Ol6vLWfpjRyGP5iqf9ka90/rdLxe2xr3bafj9dpylt7IYfiDqfqXrXH/tE7H67Wtcd92Ol6vLWfpjRyGP5iqf9ka90/rdLxe2xr3bafj9dpylt7IYfiDqfqXrXH/tE7H67Wtcd92Ol6vLWfpjRyGP5iqf9ka90/rdLxe2xr3bafj9dpylt7IYfiDqfqXrXH/tE7H67Wtcd92Ol6vLWfpjRyGP5iqf9ka90/rdLxe2xr3bafj9dpylt7IYfiDqfqXrXH/tE7H67Wtcd92Ol6vLWfpjRyGP5iqf9ka90/rdLxe2xr3bafj9dpylt7IYfiDqfqXrXH/tE7H67Wtcd92Ol6vLWfpjRyGP5iqf9ka90/rdLxe2xr3bafj9dpylt7IYfiDqfqXrXH/tE7H67Wtcd92Ol6vLWfpjRyGP5iqf9ka90/rdLxe2xr3bafj9dpylt5I8ofxD6xtjfv1XWvct52O12vL3XrDyR/GP9i2Ne7Xd61x33Y6Xq8td&#x2B;sNJ38Y/2Db1rhf37XGfdvpeL223K03nPxh/INtW&#x2B;N&#x2B;fdca922n4/XacrfecPKH8Q&#x2B;2bY379V1r3Ledjtdry916w8kfxj/YtjXu13etcd92Ol6vLXfrDSd/GP9g29a4X9&#x2B;1xn3b6Xi9ttytN5z8YfyDbVvjfn3XGvdtp&#x2B;P12nK33nDyh/EPtm2N&#x2B;/Vda9y3nY7Xa8vdesPJH8Y/2LY17td3rXHfdjpery136w0nfxj/YNvWuF/ftcZ92&#x2B;l4vbbcrTec/GH8g21b43591xr3bafj9dpyt95w8ofxD7Ztjfv1XWvct52O12vL3XrDyR/GP9i2Ne7Xd61x33Y6Xq8td&#x2B;sNJ38Y/2Db1rhf37XGfdvpeL223K03nPxh/INtW&#x2B;N&#x2B;fdca922n4/XacrfecPKH8Q&#x2B;2bY379V1r3Ledjtdry916w8kfxj/YtjXu13etcd92Ol6vLXfrDSd/GP9g29a4X9&#x2B;1xn3b6Xi9ttytN5z8YfyDbVvjfn3XGvdtp&#x2B;P12nK33rDEH0zVp9a4f3tr3K/vOh2v97Rylt6IxANe9ak17t/eGvfru07H6z2tnKU3IvGAV31qjfu3t8b9&#x2B;q7T8XpPK2fpjUg84FWfWuP&#x2B;7a1xv77rdLze08pZeiMSD3jVp9a4f3tr3K/vOh2v97Rylt6IxANe9ak17t/eGvfru07H6z2tnKU3IvGAV31qjfu3t8b9&#x2B;q7T8XpPK2fpjUg84FWfWuP&#x2B;7a1xv77rdLze08pZeiMSD3jVp9a4f3tr3K/vOh2v97Rylt6IxANe9ak17t/eGvfru07H6z2tnKU3IvGAV31qjfu3t8b9&#x2B;q7T8XpPK2fpjUg84FWfWuP&#x2B;7a1xv77rdLze08pZeiMSD3jVp9a4f3tr3K/vOh2v97Rylt6IxANe9ak17t/eGvfru07H6z2tnKU3IvGAV31qjfu3t8b9&#x2B;q7T8XpPK2fpjUg84FWfWuP&#x2B;7a1xv77rdLze08pZeiMSD3jVp9a4f3tr3K/vOh2v97Rylt6IxANe9ak17t/eGvfru07H6z2tnKU3IvGAV31qjfu3t8b9&#x2B;q7T8XpPK2fpjUg84FWfWuP&#x2B;7a1xv77rdLze08pZeiMSD7gtZ&#x2B;H7sZ2O12tb4/7trXH/tE7H6z2tOD1BiQfSlrPw/dhOx&#x2B;u1rXH/9ta4f1qn4/WeVpyeoMQDactZ&#x2B;H5sp&#x2B;P12ta4f3tr3D&#x2B;t0/F6TytOT1DigbTlLHw/ttPxem1r3L&#x2B;9Ne6f1ul4vacVpyco8UDacha&#x2B;H9vpeL22Ne7f3hr3T&#x2B;t0vN7TitMTlHggbTkL34/tdLxe2xr3b2&#x2B;N&#x2B;6d1Ol7vacXpCUo8kLache/Hdjper22N&#x2B;7e3xv3TOh2v97Ti9AQlHkhbzsL3Yzsdr9e2xv3bW&#x2B;P&#x2B;aZ2O13tacXqCEg&#x2B;kLWfh&#x2B;7GdjtdrW&#x2B;P&#x2B;7a1x/7ROx&#x2B;s9rTg9QYkH0paz8P3YTsfrta1x//bWuH9ap&#x2B;P1nlacnqDEA2nLWfh&#x2B;bKfj9drWuH97a9w/rdPxek8rTk9Q4oG05Sx8P7bT8Xpta9y/vTXun9bpeL2nFacnKPFA2nIWvh/b6Xi9tjXu394a90/rdLze04rTE5R4IG05C9&#x2B;P7XS8Xtsa929vjfundTpe72nF6QlKPJC2nIXvx3Y6Xq9tjfu3t8b90zodr/e04vQEJR5IW87C92M7Ha/Xtsb921vj/mmdjtd7WnF6ghIPpC1n4fuxnY7Xa1vj/u2tcf&#x2B;0TsfrPa04PUGJB9KWs/D92E7H67Wtcf/21rh/Wqfj9Z5WnJ6gxANpy1n4fmyn4/Xa1rh/e2vcP63T8XpPK05PUOKBtOUsfD&#x2B;20/F6bWvcv7017p/W6Xi9pxWnJyjxQNrWuH97a9y3rXHf9href31XHD5PW5yeoMQDaVvj/u2tcd&#x2B;2xn3ba3j/9V1x&#x2B;DxtcXqCEg&#x2B;kbY37t7fGfdsa922v4f3Xd8Xh87TF6QlKPJC2Ne7f3hr3bWvct72G91/fFYfP0xanJyjxQNrWuH97a9y3rXHf9href31XHD5PW5yeoMQDaVvj/u2tcd&#x2B;2xn3ba3j/9V1x&#x2B;DxtcXqCEg&#x2B;kbY37t7fGfdsa922v4f3Xd8Xh87TF6QlKPJC2Ne7f3hr3bWvct72G91/fFYfP0xanJyjxQNrWuH97a9y3rXHf9href31XHD5PW5yeoMQDaVvj/u2tcd&#x2B;2xn3ba3j/9V1x&#x2B;DxtcXqCEg&#x2B;kbY37t7fGfdsa922v4f3Xd8Xh87TF6QlKPJC2Ne7f3hr3bWvct72G91/fFYfP0xanJyjxQNrWuH97a9y3rXHf9href31XHD5PW5yeoMQDaVvj/u2tcd&#x2B;2xn3ba3j/9V1x&#x2B;DxtcXqCEg&#x2B;kbY37t7fGfdsa922v4f3Xd8Xh87TF6QlKPJC2Ne7f3hr3bWvct72G91/fFYfP0xanJyjxQNrWuH97a9y3rXHf9href31XHD5PW5yeoMQDaVvj/u2tcd&#x2B;2xn3ba3j/9V1x&#x2B;DxtcXqCEg&#x2B;kbY37t7fGfdsa922v4f3Xd8Xh87TF6QlKPJC2Ne7f3hr3bWvct72G91/fFYfP0xanJyjxQNrWuH97a9y3vYb3b3sN7/&#x2B;01rhvW&#x2B;O&#x2B;LWfpjUg84LY17t/eGvdtr&#x2B;H9217D&#x2B;z&#x2B;tNe7b1rhvy1l6IxIPuG2N&#x2B;7e3xn3ba3j/ttfw/k9rjfu2Ne7bcpbeiMQDblvj/u2tcd/2Gt6/7TW8/9Na475tjfu2nKU3IvGA29a4f3tr3Le9hvdvew3v/7TWuG9b474tZ&#x2B;mNSDzgtjXu394a922v4f3bXsP7P6017tvWuG/LWXojEg&#x2B;4bY37t7fGfdtreP&#x2B;21/D&#x2B;T2uN&#x2B;7Y17ttylt6IxANuW&#x2B;P&#x2B;7a1x3/Ya3r/tNbz/01rjvm2N&#x2B;7acpTci8YDb1rh/e2vct72G9297De//tNa4b1vjvi1n6Y1IPOC2Ne7f3hr3ba/h/dtew/s/rTXu29a4b8tZeiMSD7htjfu3t8Z922t4/7bX8P5Pa437tjXu23KW3ojEA25b4/7trXHf9hrev&#x2B;01vP/TWuO&#x2B;bY37tpylNyLxgNvWuH97a9y3vYb3b3sN7/&#x2B;01rhvW&#x2B;O&#x2B;LWfpjUg84LY17t/eGvdtr&#x2B;H9217D&#x2B;z&#x2B;tNe7b1rhvy1l6IxIPuG2N&#x2B;7e3xn3ba3j/ttfw/k9rjfu2Ne7bcpbeiMQDblvj/u2tcd/2Gt6/7TW8/9Na475tjfu2nKU3IvGA29a4f3tr3Le9hvdvew3v/7TWuG9b474tZ&#x2B;mNSDzgtjXu394a922v4f3bXsP7P6017tvWuG/LWXojEg&#x2B;4bY37t7fGfdtreP&#x2B;21/D&#x2B;T2uN&#x2B;7Y17ttylt6IxANuW&#x2B;P&#x2B;7a1x3/Ya3r/tNbz/01rjvm2N&#x2B;7acpTci8YDb1rh/e2vct61x3/Ya3r/tNbx/22t4/7Y4PUGJB9K2xv3bW&#x2B;O&#x2B;bY37ttfw/m2v4f3bXsP7t8XpCUo8kLY17t/eGvdta9y3vYb3b3sN79/2Gt6/LU5PUOKBtK1x//bWuG9b477tNbx/22t4/7bX8P5tcXqCEg&#x2B;kbY37t7fGfdsa922v4f3bXsP7t72G92&#x2B;L0xOUeCBta9y/vTXu29a4b3sN79/2Gt6/7TW8f1ucnqDEA2lb4/7trXHftsZ922t4/7bX8P5tr&#x2B;H92&#x2B;L0BCUeSNsa929vjfu2Ne7bXsP7t72G9297De/fFqcnKPFA2ta4f3tr3Letcd/2Gt6/7TW8f9treP&#x2B;2OD1BiQfStsb921vjvm2N&#x2B;7bX8P5tr&#x2B;H9217D&#x2B;7fF6QlKPJC2Ne7f3hr3bWvct72G9297De/f9hrevy1OT1DigbStcf/21rhvW&#x2B;O&#x2B;7TW8f9treP&#x2B;21/D&#x2B;bXF6ghIPpG2N&#x2B;7e3xn3bGvdtr&#x2B;H9217D&#x2B;7e9hvdvi9MTlHggbWvcv7017tvWuG97De/f9hrev&#x2B;01vH9bnJ6gxANpW&#x2B;P&#x2B;7a1x37bGfdtreP&#x2B;21/D&#x2B;ba/h/dvi9AQlHkjbGvdvb437tjXu217D&#x2B;7e9hvdvew3v3xanJyjxQNrWuH97a9y3rXHf9hrev&#x2B;01vH/ba3j/tjg9QYkH0rbG/dtb475tjfu21/D&#x2B;ba/h/dtew/u3xekJSjyQtjXu394a921r3Le9hvdvew3v3/Ya3r8tTk9Q4oG0rXH/9ta4b1vjvu01vH/ba3j/ttfw/m1xeoISD6QtZ&#x2B;H7sa1x/7Ti8HneXvJLnUCJP2hbzsL3Y1vj/mnF4fO8veSXOoESf9C2nIXvx7bG/dOKw&#x2B;d5e8kvdQIl/qBtOQvfj22N&#x2B;6cVh8/z9pJf6gRK/EHbcha&#x2B;H9sa908rDp/n7SW/1AmU&#x2B;IO25Sx8P7Y17p9WHD7P20t&#x2B;qRMo8Qdty1n4fmxr3D&#x2B;tOHyet5f8UidQ4g/alrPw/djWuH9acfg8by/5pU6gxB&#x2B;0LWfh&#x2B;7Gtcf&#x2B;04vB53l7yS51AiT9oW87C92Nb4/5pxeHzvL3klzqBEn/QtpyF78e2xv3TisPneXvJL3UCJf6gbTkL349tjfunFYfP8/aSX&#x2B;oESvxB23IWvh/bGvdPKw6f5&#x2B;0lv9QJlPiDtuUsfD&#x2B;2Ne6fVhw&#x2B;z9tLfqkTKPEHbctZ&#x2B;H5sa9w/rTh8nreX/FInUOIP2paz8P3Y1rh/WnH4PG8v&#x2B;aVOoMQftC1n4fuxrXH/tOLwed5e8kudQIk/aFvOwvdjW&#x2B;P&#x2B;acXh87y95Jc6gRJ/0Lache/Htsb904rD53l7yS91AiX&#x2B;oG05C9&#x2B;PbY37pxWHz/P2kl/qBEr8QVd9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJyjxQFZ9Kmfh&#x2B;7Gtcf&#x2B;01rhvOx2v1xanJ5gkSZ7XB1GSJHleH0RJkuR5fRAlSZLn9UGUJEme1wdRkiR5Xh9ESZLkeX0QJUmS5/VBlCRJntcHUZIkeV4fREmS5Hl9ECVJkuf1QZQkSZ7XB1GSJHleH0RJkuR5fRAlSZLn9UGUJEme1wdRkiR5Xh9ESZLkeX0QJUmS5/VBlCRJntcHUZIkeV4fREmS5Hl9ECVJkuf1QZQkSZ7XB1GSJHleH0RJkuR5fRAlSZLn9UGUJEme1wdRkiR5Xh9ESZLkeX0QJUmS5/VBlCRJntcHUZIkeV4fREmS5Hl9ECVJkuf1QZQkSZ7XB1GSJHleH0RJkuR5fRAlSZLn9UGUJEme1wdRkiR5Xh9ESZLkeX0QJUmS5/VBlCRJntcHUZIkeV4fREmS5Hl9ECVJkuf1QZQkSZ7XB1GSJHleH0RJkuR5fRAlSZLn9UGUJEme1wdRkiR5Xh9ESZLkeX0QJUmS5/VBlCRJntcHUZIkeV4fREmS5Hl9ECVJkuf1QZQkSZ7XB1GSJHleH0RJkuR5fRAlSZLn9UGUJEme1wdRkiR5Xh9ESZLkeX0QJUmS5/VBlCRJntcHUZIkeV4fREmS5Hl9ECVJkuf1QZQkSZ7XB1GSJHleH0RJkuR5fRAlSZLn9UGUJEme1wdRkiR5Xh9ESZLkeX0QJUmS5/0fzZ/Bv2vH8dYAAAAASUVORK5CYII=" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Erro -->
+<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-exclamation-triangle fa-2x text-danger mr-4"></i>Erro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="contentError">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Minhas Informações -->
+<div class="modal fade" id="minhasInformacoesModal" role="dialog" aria-labelledby="exampleModalSizeLg" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-user fa-2x text-danger mr-4"></i>Minhas Informações</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="content">
+                <div class="h4">Exames</div>
+                <hr />
+                <div class="row d-flex justify-content-between pl-8 pr-8">
+                    <div>
+                        <div><b>Vencimento Exame Clínico:</b></div>
+                        <div>16/02/2026</div>
+                    </div>
+                    <div>
+                        <div><b>Vencimento Exame Dermatológico:</b></div>
+                        <div>22/03/2026</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Boleto Modal -->
+<div class="modal fade" id="myModal" role="dialog" aria-labelledby="exampleModalSizeLg" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Boleto</h5>
+                <button type="button" class="close" onclick="ocultarModalComIframe()" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="content">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="myIframe" class="embed-responsive-item" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-danger font-weight-bold" onclick="ocultarModalComIframe()">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Manutenção -->
+<div class="modal fade" id="manutencaoModal" role="dialog" aria-labelledby="exampleModalSizeLg" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-user fa-2x text-danger mr-4"></i>Aviso</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="content">
+                <div>Olá, pedimos desculpas pelo inconveniente. Nosso sistema estará em manutenção até o dia 30/09/2024, às 12:00.</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Descontos -->
+<div class="modal fade" id="descontosModal" role="dialog" aria-labelledby="exampleModalSizeLg" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Descontos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="content">
+                <div id="divDesconto">
+                    <input type="hidden" id="pValorOferta" name="pValorOferta" />
+                    <input type="hidden" id="pCodigoUnidade" name="pCodigoUnidade" />
+                    <input type="hidden" id="pCodigoOferta" name="pCodigoOferta" />
+                    <input type="hidden" id="pCPF" name="pCPF" />
+                    <input type="hidden" id="pOperacao" name="pOperacao" />
+                    <div class="row">
+                        <div class="form-group mt-2 col-md-8 col-sm-12">
+                            <select class="form-control" id="pDesconto" name="pDesconto"></select>
+                            <table class="table table-striped" id="tabDescontos">
+                                <thead>
+                                    <tr>
+                                        <th class="d-none">#</th>
+                                        <th>Nome</th>
+                                        <th class="text-center">Valor</th>
+                                        <th class="text-center">Remover</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="divValores" class="form-group mt-2 col-md-4 col-sm-12 text-center">
+                            Valor da Oferta: <label class="form-check-label" id="ValorOferta"></label><br />
+                            Valor dos Descontos: <label class="form-check-label" id="ValorDesconto"></label><br />
+                            Valor Total: <label class="form-check-label" id="ValorTotal"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnRenovar" class="btn btn-sm btn-danger font-weight-bolder" data-dismiss="modal" onclick="confirmaRenovacao()">Renovar</button>
+                <button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    $(document).ready(function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const idSufixo = urlParams.get('renovaCartao');
+
+        if (idSufixo) {
+          const buttonId = `#renovaCartao-${idSufixo}`;
+          const $button = $(buttonId);
+          if ($button.length) {
+            $button.click();
+          } else {
+            $('#contentError').html("Oferta para renovação não encontrada.");
+            $('#errorModal').modal('show');
+            console.warn(`Botão com ID "${buttonId}" não encontrado.`);
+          }
+        }
+
+
+        $(".navDepIco").click(function () {
+            if ($(".navDepItem").css("display") == "none") {
+                $(".navDepItem").css("display", "block");
+            } else {
+                $(".navDepItem").css("display", "none");
+            }
+        })
+    });
+
+    function exibirModalComIframe(src) {
+        if(isMobileDevice()){
+            var link = document.createElement('a');
+            link.href = src;
+            link.download = 'file.pdf';
+            link.dispatchEvent(new MouseEvent('click'));
+            $("body").removeAttr('style');
+        }else{
+            const iframe = document.getElementById('myIframe');
+            iframe.src = src;
+            $('#myModal').modal('show');
+        }
+    }
+
+    function ocultarModalComIframe(src) {
+        $('#myModal').modal('hide');
+        $("body").removeAttr('style');
+        location.reload();
+    }
+
+    function redirect_blank(url) {
+        var a = document.createElement('a');
+        a.target = "_blank";
+        a.href = url;
+        a.click();
+    }
+
+    async function RenovacaoCartao(codigoUnidade, codigoOferta, cpf, valor, codigoInscricao) {
+        KTApp.blockPage();
+        $('#parentOfElementToBeRedrawn').hide().show(0);
+
+        var descontos = await ObterDescontos(codigoUnidade, codigoOferta, codigoInscricao);
+
+        var descontoCAT = descontos.some(c => c.acumulativo == false && c.permissaoProprioCliente == false);
+
+        if (descontos.length > 0 && descontoCAT == false) {
+            $("#pValorOferta").val(valor);
+            $("#pCodigoUnidade").val(codigoUnidade);
+            $("#pCodigoOferta").val(codigoOferta);
+            $("#pCPF").val(cpf);
+            $("#pOperacao").val("cartao");
+            inicializarDescontos();
+            descontosDisponiveis = descontos;
+            configuraDescontosDaInscricaoAtual();
+            atualizarDescontos();
+            KTApp.unblockPage();
+            $('#descontosModal').modal('show');
+            document.body.style.cursor = 'auto';
+        } else {
+            descontosSelecionado = [];
+            await RenovacaoCartaoConcluir(codigoUnidade, codigoOferta, cpf);
+        }
+    }
+
+    async function RenovacaoCartaoConcluir(codigoUnidade, codigoOferta, cpf) {
+        KTApp.blockPage();
+        var descontosJson = JSON.stringify(descontosSelecionado);
+        $('#parentOfElementToBeRedrawn').hide().show(0);
+        $.get("/" + "renovacao/checkout", { codigoUnidade, codigoOferta, cpf, cpfResponsavel: null, descontosJson }, function (data, status) {
+            if (data.status == '0') {
+                KTApp.unblockPage();
+                $('#contentError').html(data.result);
+                $('#errorModal').modal('show');
+                document.body.style.cursor = 'auto';
+            } else if (data.status == '1') {
+                window.location.href = data.result;
+                document.body.style.cursor = 'auto';
+            }
+        });
+    }
+
+    async function RenovacaoBoleto(codigoUnidade, codigoOferta, cpf, valor, codigoInscricao) {
+        KTApp.blockPage();
+        document.body.style.pointerEvents = 'none';
+        document.body.style.cursor = 'wait';
+
+        var descontos = await ObterDescontos(codigoUnidade, codigoOferta, codigoInscricao);
+
+        var descontoCAT = descontos.some(c => c.acumulativo == false && c.permissaoProprioCliente == false);
+
+        if (descontos.length > 0 && descontoCAT == false) {
+            $("#pValorOferta").val(valor);
+            $("#pCodigoUnidade").val(codigoUnidade);
+            $("#pCodigoOferta").val(codigoOferta);
+            $("#pCPF").val(cpf);
+            $("#pOperacao").val("boleto");
+            inicializarDescontos();
+            descontosDisponiveis = descontos;
+            configuraDescontosDaInscricaoAtual();
+            atualizarDescontos();
+            KTApp.unblockPage();
+            document.body.style.pointerEvents = 'auto';
+            $('#descontosModal').modal('show');
+            document.body.style.cursor = 'auto';
+        } else {
+            descontosSelecionado = [];
+            await RenovacaoBoletoConcluir(codigoUnidade, codigoOferta, cpf);
+        }
+    }
+
+    async function RenovacaoBoletoConcluir(codigoUnidade, codigoOferta, cpf) {
+        KTApp.blockPage();
+        document.body.style.pointerEvents = 'none';
+        document.body.style.cursor = 'wait';
+        var descontosJson = JSON.stringify(descontosSelecionado);
+        $.ajax({
+            url: "/renovacao/RenovacaoBoleto",
+            type: 'GET',
+            timeout: 240000, // tempo limite em milissegundos
+            data: {
+                codigoUnidade: codigoUnidade,
+                codigoOferta: codigoOferta,
+                cpf: cpf,
+                descontosJson: descontosJson
+            },
+            success: function (data) {
+                KTApp.unblockPage();
+                document.body.style.pointerEvents = 'auto';
+                document.body.style.cursor = 'auto';
+                if (data.status === 0) {
+                    $('#contentError').html(data.result);
+                    $('#errorModal').modal('show');
+                } else if (data.status === 1) {
+                    if (data.result.trim() !== "") {
+                        exibirModalComIframe(data.result.replace('http', 'https'));
+                    } else {
+                        window.location.href = "/renovacao/success";
+                        document.body.style.cursor = 'auto';
+                    }
+                }
+            }
+        })
+        .fail(function(xhr, status, error) {
+                KTApp.unblockPage();
+                document.body.style.pointerEvents = 'auto';
+                document.body.style.cursor = 'auto';
+                var mensagemErro = error || "Ocorreu um erro inesperado ao processar sua solicitação. Tente novamente mais tarde.";
+                $('#contentError').html(mensagemErro);
+                $('#errorModal').modal('show');
+        });
+    }
+
+    async function RenovacaoGratuita(codigoUnidade, codigoOferta, cpf) {
+        document.body.style.cursor = 'wait';
+        $.get("/" + "renovacao/RenovacaoGratuita", { codigoUnidade, codigoOferta, cpf }, function (data, status) {
+            if (data.status == '0') {
+                $('#contentError').html(data.result);
+                $('#errorModal').modal('show');
+                document.body.style.cursor = 'auto';
+            } else if (data.status == '1') {
+                window.location.href = "/renovacao/success";
+                document.body.style.cursor = 'auto';
+            }
+        });
+
+    }
+
+    async function confirmaRenovacao() {
+        var codigoUnidade = $("#pCodigoUnidade").val();
+        var codigoOferta = $("#pCodigoOferta").val();
+        var cpf = $("#pCPF").val();
+        var operacao = $("#pOperacao").val();
+
+        if (operacao == 'boleto')
+            await RenovacaoBoletoConcluir(codigoUnidade, codigoOferta, cpf);
+        else if (operacao == 'cartao')
+            await RenovacaoCartaoConcluir(codigoUnidade, codigoOferta, cpf);
+    }
+
+    async function ObterDescontos(codigoUnidade, codigoOferta, codigoInscricao) {
+        return new Promise((resolve, reject) => {
+            $.get("/" + "renovacao/ObterDescontos", { codigoUnidade, codigoOferta, codigoInscricao }, function (data) {
+                resolve(data);
+            }).fail(function (error) {
+                reject(error);
+            });
+        });
+    }
+
+    var descontosDisponiveis;
+    var descontosSelecionado;
+    inicializarDescontos();
+
+    function inicializarDescontos() {
+        descontosDisponiveis = [];
+        descontosSelecionado = [];
+    }
+
+    function configuraDescontosDaInscricaoAtual() {
+        descontosDisponiveis.forEach(function (desconto) {
+            if (desconto.recorrente == true && desconto.inclusoNaInscricaoAtual == true)
+                descontosSelecionado.push(desconto);
+        });
+
+        descontosSelecionado.forEach(function (desconto) {
+            descontosDisponiveis = descontosDisponiveis.filter(c => Number(c.codigoDesconto) !== Number(desconto.codigoDesconto));
+        });
+    }
+
+    function excluirDesconto(id) {
+        if (id > 0) {
+            var desconto = descontosSelecionado.find(c => Number(c.codigoDesconto) === Number(id));
+            if (desconto) {
+                desconto.valorDescontoCalculado = 0;
+                descontosSelecionado = descontosSelecionado.filter(c => Number(c.codigoDesconto) !== Number(id));
+                descontosDisponiveis.push(desconto);
+                atualizarDescontos();
+            }
+        }
+    }
+
+    $("#pDesconto").change(function () {
+        var codigo = $(this).val();
+        if (codigo > 0) {
+            var desconto = descontosDisponiveis.find(c => Number(c.codigoDesconto) === Number(codigo));
+            if (desconto) {
+                var descontoCatAcumulativo = descontosSelecionado.some(c => c.acumulativo == true && c.permissaoProprioCliente == false);
+                var descontoCatNaoAcumulativo = descontosSelecionado.some(c => c.acumulativo == false && c.permissaoProprioCliente == false);
+
+                if (descontoCatNaoAcumulativo == false && (desconto.acumulativo == true || descontoCatAcumulativo == false)) {
+                    if (desconto.acumulativo == false) {
+                        removerTodosDescontos();
+                    } else {
+                        removerDescontosNaoAcumulativo();
+                    }
+
+                    descontosDisponiveis = descontosDisponiveis.filter(c => Number(c.codigoDesconto) !== Number(codigo));
+                    descontosSelecionado.push(desconto);
+                    atualizarDescontos();
+                }
+            }
+        }
+    });
+
+    function removerDescontosNaoAcumulativo() {
+        descontosSelecionado.forEach(function (desconto) {
+            if (desconto.acumulativo == false) {
+                desconto.valorDescontoCalculado = 0;
+                descontosSelecionado = descontosSelecionado.filter(c => Number(c.codigoDesconto) !== Number(desconto.codigoDesconto));
+                descontosDisponiveis.push(desconto);
+            }
+        });
+    }
+
+    function removerTodosDescontos() {
+        descontosSelecionado.forEach(function (desconto) {
+            desconto.valorDescontoCalculado = 0;
+            descontosSelecionado = descontosSelecionado.filter(c => Number(c.codigoDesconto) !== Number(desconto.codigoDesconto));
+            descontosDisponiveis.push(desconto);
+        });
+    }
+
+    function atualizarDescontos() {
+        var valorOriginalOferta = parseFloat($("#pValorOferta").val());
+        var valorDescontos = parseFloat(0);
+        var valorOferta = valorOriginalOferta;
+
+        $("#tabDescontos tbody").empty();
+
+        descontosSelecionado.sort(function (a, b) {
+            if ((a.formaCalculo == 2 || a.formaCalculo == 3) && (b.formaCalculo == 1 || b.formaCalculo == 6 || b.formaCalculo == 4 || b.formaCalculo == 5))
+                return -1;
+
+            if (a.formaCalculo == 1 || a.formaCalculo == 6) {
+                if (b.formaCalculo == 2 || b.formaCalculo == 3)
+                    return 1;
+
+                if (b.formaCalculo == 4 || b.formaCalculo == 5)
+                    return -1;
+            }
+
+            if ((a.formaCalculo == 4 || a.formaCalculo == 5) && (b.formaCalculo == 1 || b.formaCalculo == 6 || b.formaCalculo == 2 || b.formaCalculo == 3))
+                return 1
+
+            return 0;
+        });
+
+        descontosSelecionado.forEach(function (desconto) {
+
+            var valorDesconto = parseFloat(0);
+            if (desconto.formaCalculo == 1 || desconto.formaCalculo == 6)
+                valorDesconto = (valorOferta * (desconto.aliquota / 100));
+            else if (desconto.formaCalculo == 3 || desconto.formaCalculo == 4)
+                valorDesconto = valorOferta - desconto.aliquota;
+            else
+                valorDesconto = desconto.aliquota;
+
+            desconto.valorDescontoCalculado = valorDesconto;
+            valorDescontos = valorDescontos + valorDesconto;
+            valorOferta = valorOferta - valorDesconto;
+            if (valorOferta < 0)
+                valorOferta = 0;
+
+            var linha = `<tr><td class="d-none">${desconto.codigoDesconto}</td>
+                             <td>${desconto.nomeDescricao}</td>
+                             <td align="center">${valorDesconto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
+                             <td align="center">`;
+
+            if (desconto.permissaoProprioCliente == true) {
+                linha += `<button class="btn btn-danger btn-sm" onclick="excluirDesconto(${desconto.codigoDesconto})"><i class="fas fa-trash"></i></button>`;
+            }
+
+            linha += `</td></tr>`;
+
+            $("#tabDescontos tbody").append(linha);
+        });
+
+        if (descontosSelecionado.length > 0)
+            $("#tabDescontos").show();
+        else
+            $("#tabDescontos").hide();
+
+        $("#pDesconto").html("");
+        $("#pDesconto").append('<option value="-1">--- Selecione os descontos ---</option>');
+
+        descontosDisponiveis.sort(function (a, b) {
+            if (a.nomeDesconto.toLowerCase() < b.nomeDesconto.toLowerCase()) {
+                return -1;
+            }
+            if (a.nomeDesconto.toLowerCase() > b.nomeDesconto.toLowerCase()) {
+                return 1;
+            }
+            return 0;
+        });
+
+        var descontoCatAcumulativo = descontosSelecionado.some(c => c.acumulativo == true && c.permissaoProprioCliente == false);
+        var descontoCatNaoAcumulativo = descontosSelecionado.some(c => c.acumulativo == false && c.permissaoProprioCliente == false);
+
+        descontosDisponiveis.forEach(function (desconto) {
+            if (descontoCatNaoAcumulativo == false && desconto.permissaoProprioCliente == true && (descontoCatAcumulativo == false || desconto.acumulativo == true)) {
+                $("#pDesconto").append('<option value="' + desconto.codigoDesconto + '">' + desconto.nomeDescricao + '</option>');
+            }
+        });
+
+        //$("#descontosJson").val(JSON.stringify(descontosSelecionado));
+
+        $("#ValorOferta").text(valorOriginalOferta.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+        $("#ValorDesconto").text(valorDescontos.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+        $("#ValorTotal").text(valorOferta.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    }
+
+    async function atualizaFoto() {
+        await $.get("/" + "Home/GetFotoUsuario",
+            function (data) {
+                $("#imageFoto").css("background-image", "url(" + data + "?rand=" + Math.random() + ")");
+                $('[name="divFoto"]').removeClass("spinner spinner-center");
+            })
+    }
+
+    $("#foto").on("change", function () {
+        if ($("#foto").get(0).files.length == 0) {
+            return false;
+        }
+        $('[name="divFoto"]').addClass("spinner spinner-center");
+        var file = $("#foto").get(0).files[0];
+        var formData = new FormData();
+        formData.set("file", file, file.name);
+
+        $.ajax({
+            url: "/" + "Home/AtualizaFoto",
+            method: "post",
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false
+        })
+            .then(async function (result) {
+                await atualizaFoto();
+            });
+    })
+</script>
+                </div>
+
+                <!--end::Content-->
+                <!--begin::Footer-->
+<div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
+
+    <!--begin::Container-->
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+
+        <!--begin::Copyright-->
+        <div class="text-dark order-2 order-md-1">
+            <span class="text-muted font-weight-bold mr-2">2025©</span>
+            <a href="#" class="text-dark-75 text-hover-primary">SESI</a>
+        </div>
+
+        <!--end::Copyright-->
+        <!--begin::Nav-->
+        <!--
+    <div class="nav nav-dark order-1 order-md-2">
+        <a href="http://keenthemes.com/keen" target="_blank" class="nav-link pr-3 pl-0">About</a>
+        <a href="http://keenthemes.com/keen" target="_blank" class="nav-link px-3">Team</a>
+        <a href="http://keenthemes.com/keen" target="_blank" class="nav-link pl-3 pr-0">Contact</a>
+    </div>
+    -->
+        <!--end::Nav-->
+    </div>
+
+    <!--end::Container-->
+</div>
+
+<!--end::Footer-->
+            </div>
+
+            <!--end::Wrapper-->
+        </div>
+
+        <!--end::Page-->
+    </div>
+
+    <!--end::Main-->
+</body>
+</html>
+<script>
+    var HOST_URL = "https://preview.keenthemes.com/keen/theme/tools/preview";
+</script>
+
+<!--begin::Global Config(global config for global JS scripts)-->
+<script>
+    var KTAppSettings = {
+        "breakpoints": {
+            "sm": 576,
+            "md": 768,
+            "lg": 992,
+            "xl": 1200,
+            "xxl": 1200
+        },
+        "colors": {
+            "theme": {
+                "base": {
+                    "white": "#ffffff",
+                    "primary": "#0BB783",
+                    "secondary": "#E5EAEE",
+                    "success": "#1BC5BD",
+                    "info": "#8950FC",
+                    "warning": "#FFA800",
+                    "danger": "#F64E60",
+                    "light": "#F3F6F9",
+                    "dark": "#212121"
+                },
+                "light": {
+                    "white": "#ffffff",
+                    "primary": "#D7F9EF",
+                    "secondary": "#ECF0F3",
+                    "success": "#C9F7F5",
+                    "info": "#EEE5FF",
+                    "warning": "#FFF4DE",
+                    "danger": "#FFE2E5",
+                    "light": "#F3F6F9",
+                    "dark": "#D6D6E0"
+                },
+                "inverse": {
+                    "white": "#ffffff",
+                    "primary": "#ffffff",
+                    "secondary": "#ffffff",
+                    "success": "#ffffff",
+                    "info": "#ffffff",
+                    "warning": "#ffffff",
+                    "danger": "#ffffff",
+                    "light": "#464E5F",
+                    "dark": "#ffffff"
+                }
+            },
+            "gray": {
+                "gray-100": "#F3F6F9",
+                "gray-200": "#ECF0F3",
+                "gray-300": "#E5EAEE",
+                "gray-400": "#D6D6E0",
+                "gray-500": "#B5B5C3",
+                "gray-600": "#80808F",
+                "gray-700": "#464E5F",
+                "gray-800": "#1B283F",
+                "gray-900": "#212121"
+            }
+        },
+        "font-family": "Poppins"
+    };
+</script>
+
+<!--end::Global Config-->
+<!--begin::Global Theme Bundle(used by all pages)-->
+<script src="plugins.bundle.js"></script>
+<script src="prismjs.bundle.js"></script>
+<script src="scripts.bundle.js"></script>
+
+<!--end::Global Theme Bundle-->
+<!--begin::Page Vendors(used by this page)-->
+<script src="fullcalendar.bundle.js"></script>
+
+<!--end::Page Vendors-->
+<!--begin::Page Scripts(used by this page)-->
+<script src="widgets.js"></script>
